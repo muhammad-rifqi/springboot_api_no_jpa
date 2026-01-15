@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Update User</title>
+</head>
+<body>
+
+<h2>Update User</h2>
+
+<form id="updateForm">
+    <!-- ID USER -->
+    <input type="hidden" id="userId" value="1">
+
+    <div>
+        <label>Nama</label><br>
+        <input type="text" name="name" required>
+    </div>
+
+    <div>
+        <label>Email</label><br>
+        <input type="email" name="email" required>
+    </div>
+
+    <div>
+        <label>Photo (opsional)</label><br>
+        <input type="file" name="photo" accept="image/*">
+    </div>
+
+    <button type="submit">Update</button>
+</form>
+
+<div id="response"></div>
+
+<script src="/js/update.js"></script>
+</body>
+</html>

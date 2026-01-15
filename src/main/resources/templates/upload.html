@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload User</title>
+    <style>
+        body { font-family: Arial; }
+        .msg { margin-top: 10px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+<h2>Form Upload User</h2>
+
+<form id="userForm">
+    <div>
+        <label>Nama</label><br>
+        <input type="text" name="name" required>
+    </div>
+
+    <div>
+        <label>Email</label><br>
+        <input type="email" name="email" required>
+    </div>
+
+    <div>
+        <label>Photo</label><br>
+        <input type="file" name="photo" accept="image/*" required>
+    </div>
+
+    <button type="submit">Kirim</button>
+</form>
+
+<div id="response" class="msg"></div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

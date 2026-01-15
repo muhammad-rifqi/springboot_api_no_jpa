@@ -1,0 +1,11 @@
+download dulu => https://start.spring.io/
+pilih bahasa java, project maven , springboot 3.* 
+java 17.*
+Dependensi => Spring Web, Spring Data JPA, PostgreSQL Driver
+
+running => mvn spring-boot:run
+
+clean => mvn clean package
+
+akses statik => http://localhost:8080/users.html
+akses api => http://localhost:8080/users
